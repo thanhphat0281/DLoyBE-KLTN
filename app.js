@@ -34,7 +34,7 @@ const segment = require('./routes/D_action/segmentController');
 //E_payment
 const order = require('./routes/E_payment/orderController');
 const orderDetail = require('./routes/E_payment/orderDetailController');
-const paymentMoMo = require('./routes/E_payment/paymentMoMo');
+// const paymentMoMo = require('./routes/E_payment/paymentMoMo');
 const sendmail = require('./routes/E_payment/sendmail');
 //F_event
 const discountCode = require('./routes/F_event/discountCodeController');
@@ -104,10 +104,10 @@ app.use(expressJWT({ secret: superSecret })
             // '/socials/google',
             // '/socials/facebook',
             '/addAccount',
-            {
-                url: /^\/paymentMoMo.*/,
-                methods: ['GET', 'POST']
-            },
+            // {
+            //     url: /^\/paymentMoMo.*/,
+            //     methods: ['GET', 'POST']
+            // },
             {
                 url: /^\/segments.*/,
                 methods: ['GET']
@@ -164,7 +164,7 @@ app.use('/points', point);
 app.use('/segments', segment);
 //E_payment
 app.use('/orders', order);
-app.use('/paymentMoMo', paymentMoMo);
+// app.use('/paymentMoMo', paymentMoMo);
 app.use('/orderDetails', orderDetail);
 app.use('/send', sendmail);
 //F_event
