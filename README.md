@@ -13,7 +13,7 @@ Tran Thanh Phat		17110206
 
 B1: Clone source code from github
 
-https://github.com/thanhphat0281/KLTN2021-BE.git
+[https://github.com/thanhphat0281/KLTN2021-BE.git](https://github.com/thanhphat0281/DLoyBE-KLTN.git)
 
 
 B2: Install missing packages and libraries for the project
